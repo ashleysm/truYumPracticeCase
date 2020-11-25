@@ -1,0 +1,118 @@
+.logo{
+    margin: 0px;
+    width=100%;
+    height: 50px;
+    padding: 0px 0px 60px 25px;
+    
+    
+    
+}
+h1{
+    padding-left: 50px;
+    font-weight: 300;
+}
+header{
+    margin: 0;
+    padding: 0;
+    background-color: #315590;
+    height:50px;
+}
+
+
+.menu_head{
+    color: white;
+    float: right;
+    margin=0;
+    padding:20px 75px 10px 60px;
+}
+
+.menu_nav{
+    display:inline;
+    color: #ffffff;
+    float:right;
+    padding:10px;
+    list-style-type: none;
+    
+}
+
+
+
+body{
+    font-family: "calibri";
+    
+}
+.editmenu_form{
+    padding:10px 60px 0px 50px; 
+}
+
+
+label{
+    font-weight: 600;
+}
+
+table{
+    padding: 0px 50px 50px 50px;
+    text-align: center;
+    width:80%;
+   
+}
+
+a{
+     color: black;
+}
+
+
+#grey{
+    color: darkgrey;
+    font-weight: bold;
+    padding: 30px 50px 90px;
+    
+}
+#grey a{
+    color: blue;
+}
+
+
+.editmenu_tab{
+    text-align:left;
+    padding: 0 0 10px 0;
+    height: 0em;
+    width:55%;
+    
+    
+}
+
+#radio{
+    display: inline;
+}
+
+
+.saveBTN{
+    background-color: #315590;
+    color:#ffffff;
+    padding: 15px 50px 15px 50px;
+    margin-bottom: 50px;
+    border: none;
+    font-weight: 600;
+}
+
+.green{
+    color: #00a86b;
+    text-align: left;
+    padding: 30px 20px 90px 50px;
+    font-weight: bold;
+}
+
+footer{
+    width=100%;
+    height: 50px;
+    padding:  0;
+    margin:0;
+    background-color: #bfbfbf;
+}
+.foot{
+    padding-top: 10px;
+    height: 30px;
+    float:left;
+    
+}
