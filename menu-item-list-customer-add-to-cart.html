@@ -24,6 +24,15 @@
         border: 0px;
       }
       
+.message{
+        color: darkgreen;
+        background-color: darkseagreen;
+      }
+      .message{
+        color: darkgreen;
+        background-color: darkseagreen;
+      }
+      
       
      
     </style>
@@ -49,7 +58,7 @@
       </ul>
     </div>
     </nav>
-    
+   
 
 <body>
     <!-- Optional JavaScript -->
@@ -58,83 +67,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
-    <h3>Edit Menu Item</h3>
-    <form class="form">
-    <div class="container">
-    
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-            <label for="itemName">Item Name</label>
-            <input type="text" class="form-control" id="itemName" > 
-        </div>
-        </div>
-        
-
-       
-    </div>
-
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="form-group">
-                <label for="price">Price</label>
-                <input type="price" class="form-control" id="price" > 
-            </div>
-            </div>  
-           
-            
-            
-        <div class="col-lg-3">
-        <label for="dateOfBirth">Date Of Launch</label>
-        <input type="text" class="form-control" id="dateOfLaunch">
-        
-        </div>
-         <div class="col-lg-3">
-            <div class="form-group">
-            <label for="category">Category</label>
-            <input type="category" class="form-control" id="category" > 
-        </div>
-        </div>
-        
-        
-        
-        <div class="col-lg-3">
-            <p>Active<p>
-            <div class="form-check-inline" id="radio">
-            
-            <input type="radio" value="" class="form-check-input" id="check1" > 
-            <label class="form=check-label" for="check1">Yes</label>
-        </div>
-        <div class="form-check-inline" id="radio">
-            
-            <input type="radio" value="" class="form-check-input" id="check2" > 
-            <label class="form-check-label" for="check2">No</label>
-        </div>
-        </div>
-        </div>
-        
-
-        <div class="row">
-        <div class="col">
-            
-            <div class="form-check" id="check">
-            <input type="checkbox" class="form-check-input" id="check" > 
-            <label for="check">Free Delivery</label>
-        </div>  
-        
-        </div>
-        </div>
-        <div class="row">
-            <div class="col">
-              <button type="submit" class="btn" style="background-color: coral;">Save</button>  
-            </div>
-        </div>
-        
-    </form>
+<div class="container">
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
+ <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80" alt="card image cap">
+<div class="card-body">
+    <h6 class="card-title mb-1 text-secondary">Sandwich
+        <span style="color: crimson;" class="float-right" >Rs.99</span></h6>
+<br>
+    <span class="badge badge-success">Active</span><small class="text-muted mb-2 text-secondary"> Main Course<span class="float-right"><i class="material-icons icon-size"  style="color: blue;">local_shipping</i><span class="badge badge-info float-right">FREE</span></span> </small>
     <br>
+    <div class="p-2 message">Item added successfully.</div>
+    <br>
+    <small class="text-muted mb-2 text-secondary"><i class="material-icons icon-size">access_time</i>Launch</small><br>
+    <small class="text-muted mb-2 text-secondary">15/03/2017</small> 
+    <button class="btn float-right" type="submit" style="background-color: coral; color: white;"><i class="material-icons icon-size">add_shopping_cart</i>Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 <div class="footer">
-  <nav class="navbar fixed-bottom" style="background-color: coral;">
+  <nav class="navbar" style="background-color: coral;">
       <a class="navbar-brand" style="color: white" href="#">Copyright 2019</a>
   </nav>
 </div>

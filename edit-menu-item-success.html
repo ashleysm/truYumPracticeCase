@@ -23,6 +23,10 @@
         padding: 0px;
         border: 0px;
       }
+      .message{
+        color: darkgreen;
+        background-color: darkseagreen;
+      }
       
       
      
@@ -58,80 +62,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  
-    <h3>Edit Menu Item</h3>
-    <form class="form">
-    <div class="container">
-    
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group">
-            <label for="itemName">Item Name</label>
-            <input type="text" class="form-control" id="itemName" > 
-        </div>
-        </div>
-        
+   
+    <div class="container-fluid mb-4 p-3">
+      
+      <h1 class="font-weight-normal mb-1">Edit Menu Item</h1>
+    <br>
+      <div class="p-3 message">Menu Item details saved successfully.</div>
 
-       
+      
     </div>
 
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="form-group">
-                <label for="price">Price</label>
-                <input type="price" class="form-control" id="price" > 
-            </div>
-            </div>  
-           
-            
-            
-        <div class="col-lg-3">
-        <label for="dateOfBirth">Date Of Launch</label>
-        <input type="text" class="form-control" id="dateOfLaunch">
-        
-        </div>
-         <div class="col-lg-3">
-            <div class="form-group">
-            <label for="category">Category</label>
-            <input type="category" class="form-control" id="category" > 
-        </div>
-        </div>
-        
-        
-        
-        <div class="col-lg-3">
-            <p>Active<p>
-            <div class="form-check-inline" id="radio">
-            
-            <input type="radio" value="" class="form-check-input" id="check1" > 
-            <label class="form=check-label" for="check1">Yes</label>
-        </div>
-        <div class="form-check-inline" id="radio">
-            
-            <input type="radio" value="" class="form-check-input" id="check2" > 
-            <label class="form-check-label" for="check2">No</label>
-        </div>
-        </div>
-        </div>
-        
-
-        <div class="row">
-        <div class="col">
-            
-            <div class="form-check" id="check">
-            <input type="checkbox" class="form-check-input" id="check" > 
-            <label for="check">Free Delivery</label>
-        </div>  
-        
-        </div>
-        </div>
-        <div class="row">
-            <div class="col">
-              <button type="submit" class="btn" style="background-color: coral;">Save</button>  
-            </div>
-        </div>
-        
-    </form>
-    <br>
 </body>
 <div class="footer">
   <nav class="navbar fixed-bottom" style="background-color: coral;">

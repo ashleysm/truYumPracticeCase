@@ -67,6 +67,8 @@
             <div class="form-group">
             <label for="itemName">Item Name</label>
             <input type="text" class="form-control" id="itemName" > 
+            <small class="text-danger">Item Name is required</small><br>
+            <small class="text-danger">Item Name cannot exceed 200 characters</small>
         </div>
         </div>
         
@@ -79,6 +81,9 @@
                 <div class="form-group">
                 <label for="price">Price</label>
                 <input type="price" class="form-control" id="price" > 
+                <small class="text-danger">Price is required</small><br>
+                <small class="text-danger">Price can only contain numbers</small>
+        
             </div>
             </div>  
            
@@ -87,12 +92,17 @@
         <div class="col-lg-3">
         <label for="dateOfBirth">Date Of Launch</label>
         <input type="text" class="form-control" id="dateOfLaunch">
+        <small class="text-danger">Incorrect date format</small><br>
+            
         
         </div>
          <div class="col-lg-3">
             <div class="form-group">
             <label for="category">Category</label>
             <input type="category" class="form-control" id="category" > 
+            <small class="text-danger">Select at least one category</small><br>
+            
+        
         </div>
         </div>
         
@@ -109,7 +119,10 @@
             
             <input type="radio" value="" class="form-check-input" id="check2" > 
             <label class="form-check-label" for="check2">No</label>
-        </div>
+        </div><br>
+        <small class="text-danger">Select in stock status</small><br>
+            
+        
         </div>
         </div>
         
