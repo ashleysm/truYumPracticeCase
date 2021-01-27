@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Movie Cruiser</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     
+      .nav-list{
+          list-style-type: none;
+      }
+      .material-icons{
+        vertical-align: middle;
+      }
+      .card{
+        margin:10px;
+        padding: 10px;
+
+      }
+      .footer{
+        margin-top:auto;
+        padding: 0px;
+        border: 0px;
+      }
+      .masthead {
+  height: 300px;
+  min-height: 300px;
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+      
+     
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://en.wikipedia.org" rel="stylesheet">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color:black;">
+      <a href="#"  class="navbar-brand text-white"><i style="color: white"class="material-icons icon-size">theaters</i>Movie Cruiser</a>
+      
+      <button class="navbar-toggler btn btn-light" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon" style="color: white"></span>
+    </button>
+    <div style="color: white" class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav_item">
+          <a class="nav-link" style="color: white" href="list-of-movies-customer.html">
+            Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white" href="list-of-movies-customer.html">New Releases</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white" href="favourites.html">My Favourites</a>
+              </li>
+      </ul>
+    </div>
+    </nav>
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12">
+              
+            <h1 style="color:white; font-weight: 100; text-align: center;">Welcome to Movie Cruiser</h1>
+            <h3 style="color:whitesmoke; font-weight: 100; text-align: center;">Watch movies anytime, anywhere!</h3>
+            <div class="input-group">
+              <button type="button" class="btn" style="background-color: white;"><i class="material-icons icon-size">search</i></button>
+              <input type="search" class="form-control rounded" placeholder="Search movie" aria-label="Search"
+                aria-describedby="search-addon" />
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<body style="background-color: black;">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+<div class="container">
+<div class="row">
+    <h4 style="color: white;">Science Fiction</h4>
+    <br>
+    <div class="col">
+        
+ <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg" alt="card image cap">
+<div class="card-body">
+    <h6 class="card-title mb-1 text-secondary">Interstellar
+        <span class="badge badge-success float-right">Active</span></h6>
+    <small class="text-muted mb-2 text-secondary">$188M</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">Date of Launch</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">October 10, 2014</small>
+    <br>
+    <button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+    <a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg" alt="card image cap">
+<div class="card-body">
+<h6 class="card-title mb-1 text-secondary">Inception
+    <span class="badge badge-success float-right">Active</span></h6>
+<small class="text-muted mb-2 text-secondary">$836M</small>
+<br>
+<small class="text-muted mb-2 text-secondary">Date of Launch</small>
+<br>
+<small class="text-muted mb-2 text-secondary">July 8, 2010</small>
+<br>
+<button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+<a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row"> 
+    <h4 style="color: white;">Superhero</h4>
+    <div class="col">
+       
+ <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg" alt="card image cap">
+<div class="card-body">
+    <h6 class="card-title mb-1 text-secondary">Avengers Infinity War
+        <span class="badge badge-success float-right">Active</span></h6>
+    <small class="text-muted mb-2 text-secondary">$1.5B</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">Date of Launch</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">27 April, 2018</small>
+    <br>
+    <button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+    <a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+  </div>
+</div>
+</div>
+</div> 
+
+<div class="row"> 
+    <h4 style="color: white;">Romance</h4>
+    <div class="col">
+       
+ <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/c/c9/CallMeByYourName2017.png" alt="card image cap">
+<div class="card-body">
+    <h6 class="card-title mb-1 text-secondary">Call Me By Your Name
+        <span class="badge badge-success float-right">Active</span></h6>
+    <small class="text-muted mb-2 text-secondary">$41M</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">Date of Launch</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">November 24, 2017</small>
+    <br>
+    <button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+    <a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+  </div>
+</div>
+</div>
+<div class="col">
+    
+<div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/The_Fault_in_Our_Stars_%28Official_Film_Poster%29.png/220px-The_Fault_in_Our_Stars_%28Official_Film_Poster%29.png" alt="card image cap">
+<div class="card-body">
+<h6 class="card-title mb-1 text-secondary">The Fault In Our Stars
+    <span class="badge badge-success float-right">Active</span></h6>
+<small class="text-muted mb-2 text-secondary">$307M</small>
+<br>
+<small class="text-muted mb-2 text-secondary">Date of Launch</small>
+<br>
+<small class="text-muted mb-2 text-secondary">June 6, 2014</small>
+<br>
+<button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+<a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+</div>
+</div>
+</div>
+</div> 
+
+<div class="row"> 
+    <h4 style="color: white;">Comedy</h4>
+
+<div class="col">
+    
+<div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Mean_Girls_film_poster.png/220px-Mean_Girls_film_poster.png" alt="card image cap">
+<div class="card-body">
+<h6 class="card-title mb-1 text-secondary">Mean Girls
+    <span class="badge badge-success float-right">Active</span></h6>
+<small class="text-muted mb-2 text-secondary">$43M</small>
+<br>
+<small class="text-muted mb-2 text-secondary">Date of Launch</small>
+<br>
+<small class="text-muted mb-2 text-secondary">April 19, 2004</small>
+<br>
+<button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+<a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+</div>
+</div>
+</div>
+</div> 
+
+<div class="row"> 
+    <h4 style="color: white;">Adventure</h4>
+    
+    <div class="col">
+       
+ <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/d/dc/Jumanji_Welcome_to_the_Jungle.png" alt="card image cap">
+<div class="card-body">
+    <h6 class="card-title mb-1 text-secondary">Jumanji: Welcome to the Jungle
+        <span class="badge badge-success float-right">Active</span></h6>
+    <small class="text-muted mb-2 text-secondary">$962M</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">Date of Launch</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">December 5, 2017</small>
+    <br>
+    <button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+    <a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+  </div>
+</div>
+</div>
+<div class="col">
+    
+<div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/The_Maze_Runner_poster.jpg/220px-The_Maze_Runner_poster.jpg" alt="card image cap">
+<div class="card-body">
+<h6 class="card-title mb-1 text-secondary">The Maze Runner
+    <span class="badge badge-success float-right">Active</span></h6>
+<small class="text-muted mb-2 text-secondary">$348M</small>
+<br>
+<small class="text-muted mb-2 text-secondary">Date of Launch</small>
+<br>
+<small class="text-muted mb-2 text-secondary">	
+    September 19, 2014</small>
+<br>
+<button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+<a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+</div>
+</div>
+</div>
+
+</div> 
+
+
+<div class="row"> 
+    <h4 style="color: white;">Thriller</h4>
+    <div class="col">
+       
+ <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/3/31/Split_%282017_film%29.jpg" alt="card image cap">
+<div class="card-body">
+    <h6 class="card-title mb-1 text-secondary">Split
+        <span class="badge badge-success float-right">Active</span></h6>
+    <small class="text-muted mb-2 text-secondary">$278M</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">Date of Launch</small>
+    <br>
+    <small class="text-muted mb-2 text-secondary">September 26, 2016</small>
+    <br>
+    <button class="btn float-right" type="submit" style="background-color: rgb(206, 60, 7); color:black;"><i class="material-icons icon-size">play_circle</i>Watch Teaser</button>
+    <a href="#" class="btn btn-success mt-2 " id="favButton" style="background-color: crimson;"><i class="material-icons icon-size">favorite_border</i></a>
+  
+  </div>
+</div>
+</div>
+
+
+</div> 
+
+</div>
+</body>
+<div class="footer">
+  <nav class="navbar" style="background-color:black;">
+    <i class="material-icons icon-size">facebook</i>
+      <a class="navbar-brand" style="color: white" href="#">Copyright 2021</a>
+  </nav>
+</div>
+</html>
