@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>hTrack Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     
+      .nav-list{
+          list-style-type: none;
+      }
+      .material-icons{
+        vertical-align: middle;
+      }
+      .card{
+        margin:10px;
+        padding: 10px;
+
+      }
+      .footer{
+        margin-top:auto;
+        padding: 0px;
+        border: 0px;
+      }
+      
+      
+     
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: coral;">
+      <a href="#"  class="navbar-brand text-white"><i style="color: white"class="material-icons icon-size">local_dining</i>truYum</a>
+      
+      <button class="navbar-toggler btn btn-light" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon" style="color: white"></span>
+    </button>
+    <div style="color: white" class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav_item">
+          <a class="nav-link" style="color: white" href="#">
+            Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white" href="#">Items</a>
+            </li>
+      </ul>
+    </div>
+    </nav>
+    
+
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+    <h3>Edit Menu Item</h3>
+    <form class="form">
+    <div class="container">
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+            <label for="itemName">Item Name</label>
+            <input type="text" class="form-control" id="itemName" > 
+            <small class="text-danger">Item Name is required</small><br>
+            <small class="text-danger">Item Name cannot exceed 200 characters</small>
+        </div>
+        </div>
+        
+
+       
+    </div>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="form-group">
+                <label for="price">Price</label>
+                <input type="price" class="form-control" id="price" > 
+                <small class="text-danger">Price is required</small><br>
+                <small class="text-danger">Price can only contain numbers</small>
+        
+            </div>
+            </div>  
+           
+            
+            
+        <div class="col-lg-3">
+        <label for="dateOfBirth">Date Of Launch</label>
+        <input type="text" class="form-control" id="dateOfLaunch">
+        <small class="text-danger">Incorrect date format</small><br>
+            
+        
+        </div>
+         <div class="col-lg-3">
+            <div class="form-group">
+            <label for="category">Category</label>
+            <input type="category" class="form-control" id="category" > 
+            <small class="text-danger">Select at least one category</small><br>
+            
+        
+        </div>
+        </div>
+        
+        
+        
+        <div class="col-lg-3">
+            <p>Active<p>
+            <div class="form-check-inline" id="radio">
+            
+            <input type="radio" value="" class="form-check-input" id="check1" > 
+            <label class="form=check-label" for="check1">Yes</label>
+        </div>
+        <div class="form-check-inline" id="radio">
+            
+            <input type="radio" value="" class="form-check-input" id="check2" > 
+            <label class="form-check-label" for="check2">No</label>
+        </div><br>
+        <small class="text-danger">Select in stock status</small><br>
+            
+        
+        </div>
+        </div>
+        
+
+        <div class="row">
+        <div class="col">
+            
+            <div class="form-check" id="check">
+            <input type="checkbox" class="form-check-input" id="check" > 
+            <label for="check">Free Delivery</label>
+        </div>  
+        
+        </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <button type="submit" class="btn" style="background-color: coral;">Save</button>  
+            </div>
+        </div>
+        
+    </form>
+    <br>
+</body>
+<div class="footer">
+  <nav class="navbar fixed-bottom" style="background-color: coral;">
+      <a class="navbar-brand" style="color: white" href="#">Copyright 2019</a>
+  </nav>
+</div>
+</html>
