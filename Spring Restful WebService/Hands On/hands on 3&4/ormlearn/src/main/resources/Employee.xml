@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="dateFormat" class="java.text.SimpleDateFormat">
+<constructor-arg value="dd/MM/yyyy"/>
+</bean>
+
+<!-- __________Department Instances____________  -->
+
+<bean id="dep1" class="com.cognizant.ormlearn.model.Department">
+	<property name="did" value="1"/>
+	<property name="dname" value="Delivery"/>
+</bean>
+
+<bean id="dep2" class="com.cognizant.ormlearn.model.Department">
+	<property name="did" value="2"/>
+	<property name="dname" value="Testing"/>
+</bean>
+
+<!-- __________Skill Instances_____________ -->
+
+<bean id="s1" class="com.cognizant.ormlearn.model.Skill">
+	<property name="id" value="1" />
+	<property name="name" value="Presentation" />
+</bean>
+
+<bean id="s2" class="com.cognizant.ormlearn.model.Skill">
+	<property name="id" value="2" />
+	<property name="name" value="Communication" />
+</bean>
+
+<bean id="s3" class="com.cognizant.ormlearn.model.Skill">
+	<property name="id" value="3" />
+	<property name="name" value="Teamwork" />
+</bean>
+
+<bean id="s4" class="com.cognizant.ormlearn.model.Skill">
+	<property name="id" value="4" />
+	<property name="name" value="Technical" />
+</bean>
+
+<!-- _____________Employee Instances_____________ -->
+
+<bean id="emp1" class="com.cognizant.ormlearn.model.Employee">
+	<property name="id" value="1"/>
+	<property name="name" value="Dhanwin"/>
+	<property name="salary" value="320000"/>
+	<property name="dateOfBirth">
+		<bean factory-bean="dateFormat" factory-method="parse">
+		<constructor-arg value="21/05/1992"/></bean>
+	</property>
+	<property name="department" ref="dep1"/>
+	<property name="skillList">
+		<set> <ref bean="s1"/> <ref bean="s4"/>
+		</set>
+	</property>
+	
+</bean>
+
+<bean id="emp2" class="com.cognizant.ormlearn.model.Employee">
+	<property name="id" value="2"/>
+	<property name="name" value="Jaydev"/>
+	<property name="salary" value="300000"/>
+	<property name="dateOfBirth">
+		<bean factory-bean="dateFormat" factory-method="parse">
+		<constructor-arg value="13/08/1994"/></bean>
+	</property>
+	<property name="department" ref="dep2"/>
+	<property name="skillList">
+		<set> <ref bean="s1"/> <ref bean="s3"/>
+		</set>
+	</property>
+	
+</bean>
+
+<bean id="emp3" class="com.cognizant.ormlearn.model.Employee">
+	<property name="id" value="3"/>
+	<property name="name" value="Anitha"/>
+	<property name="salary" value="350000"/>
+	<property name="dateOfBirth">
+		<bean factory-bean="dateFormat" factory-method="parse">
+		<constructor-arg value="02/11/1990"/></bean>
+	</property>
+	<property name="department" ref="dep1"/>
+	<property name="skillList">
+		<set> <ref bean="s2"/> <ref bean="s3"/>
+		</set>
+	</property>
+	
+</bean>
+
+<bean id="emp4" class="com.cognizant.ormlearn.model.Employee">
+	<property name="id" value="4"/>
+	<property name="name" value="Meena"/>
+	<property name="salary" value="320000"/>
+	<property name="dateOfBirth">
+		<bean factory-bean="dateFormat" factory-method="parse">
+		<constructor-arg value="16/07/1993"/></bean>
+	</property>
+	<property name="department" ref="dep2"/>
+	<property name="skillList">
+		<set> <ref bean="s2"/> <ref bean="s4"/>
+		</set>
+	</property>
+	
+</bean>
+
+<bean id="empList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="emp1"/>
+				<ref bean="emp2"/>
+				<ref bean="emp3"/>
+				<ref bean="emp4"/>
+			</list>
+		</constructor-arg>
+</bean>
+
+<bean id="departmentList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="dep1"/>
+				<ref bean="dep2"/>
+			</list>
+		</constructor-arg>
+</bean>
+	
+
+</beans>
